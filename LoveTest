@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Test - TQY</title>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>❤️😊</h1>
+    <h1>Congratulations!</h1>
+    <h4>You've passed the love test.</h4>
+    <br>
+
+    <h6>Best regards,</h6>
+    <h6>Ashlyn Tan<h6>
+<!-- // 提问你还爱我吗，如果没有回答爱，则一直循环 -->
+    <script>
+
+        while (true) {
+        
+        let love=prompt('Hi A-win, do you love me? ')
+        
+        if (love==='yes'||love==='YES'||love==='Yes'||love==='sure'
+        ||love==='Sure'||love==='of course'||love==='Of course') {
+        
+            alert('I love you too~ ♥')
+        
+            break
+            
+        }
+        
+        }
+        
+        
+        </script>
+
+</body>
+</html>
