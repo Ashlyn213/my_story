@@ -20,42 +20,7 @@
     <h6>Best regards,</h6>
     <h6>Ashlyn Tan<h6>
         
-<!-- // 上传图片 -->
-        
-<h1>Upload and Display Photo</h1>
 
-    <div class="upload-container">
-        <input type="file" id="upload" accept="image/*">
-    </div>
-
-    <div id="preview-container">
-        <img id="preview" src="#" alt="Your photo will appear here" style="display:none;">
-    </div>
-
-    <script>
-        const uploadInput = document.getElementById('upload');
-        const previewImage = document.getElementById('preview');
-
-        uploadInput.addEventListener('change', function(event) {
-            const file = event.target.files[0];
-
-            if (file && file.type.startsWith('image/')) {
-                const reader = new FileReader();
-
-                reader.onload = function(e) {
-                    previewImage.src = e.target.result;
-                    previewImage.style.display = 'block';
-                };
-
-                reader.readAsDataURL(file);
-            } else {
-                alert('Please upload a valid image file.');
-                previewImage.style.display = 'none';
-            }
-        });
-    </script>
-
-        
 <!-- // 提问你还爱我吗，如果没有回答爱，则一直循环 -->
     <script>
 
