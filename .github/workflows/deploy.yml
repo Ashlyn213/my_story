@@ -16,11 +16,20 @@ jobs:
     - name: Setup Node.js environment
       uses: actions/setup-node@v4
       with:
-        node-version: '16'  # 根据项目需要设置 Node.js 版本
+        node-version: '14'  # 根据项目需要设置 Node.js 版本
 
     - name: Install dependencies
       run: npm install  # 确保这一步安装了所有需要的依赖项
 
     - name: Build static site
       run: npm run build  # 构建静态网站，如果不同，请使用你的实际构建命令
+      
+    - name: Clear npm cache
+      run: npm cache clean --force
+
+    - name: Debug environment
+      run: |
+        node -v
+        npm -v
+        ls
 
