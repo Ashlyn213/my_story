@@ -6,6 +6,12 @@
     <title>Love Test - TQY</title>
 </head>
 <body>
+    <form action="staticman213-bq01qu1l0-ashlyn-tans-projects.vercel.app/v3/entry/github/<Ashlyn213>/<my_story>/master/comments" method="POST">
+      <input type="text" name="fields[name]" placeholder="Your name" required>
+      <input type="email" name="fields[email]" placeholder="Your email" required>
+      <textarea name="fields[message]" placeholder="Your comment" required></textarea>
+      <button type="submit">Submit Comment</button>
+    </form>
     <br>
     <br>
     <br>
@@ -20,12 +26,7 @@
     <h6>Best regards,</h6>
     <h6>Ashlyn Tan<h6>
         
-<form action="staticman213-bq01qu1l0-ashlyn-tans-projects.vercel.app/v3/entry/github/<Ashlyn213>/<my_story>/master/comments" method="POST">
-  <input type="text" name="fields[name]" placeholder="Your name" required>
-  <input type="email" name="fields[email]" placeholder="Your email" required>
-  <textarea name="fields[message]" placeholder="Your comment" required></textarea>
-  <button type="submit">Submit Comment</button>
-</form>
+
 
 
 
