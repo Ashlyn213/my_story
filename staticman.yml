@@ -2,7 +2,6 @@
 comments:
   allowedFields: # 用户可以提交的字段
     - name
-    - email
     - message
   branch: "main" # 评论将提交到的分支
   commitMessage: "New comment from {{fields.name}}" # 提交时的自定义消息
