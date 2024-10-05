@@ -7,12 +7,13 @@
 </head>
 <body>
 
-    <form action="https://staticman213-bq01qu1l0-ashlyn-tans-projects.vercel.app/v3/entry/github/Ashlyn213/my_story/main/comments" method="POST">
-      <input type="text" name="fields[name]" placeholder="Your name" required>
-      <input type="email" name="fields[email]" placeholder="Your email" required>
-      <textarea name="fields[message]" placeholder="Your comment" required></textarea>
-      <button type="submit">Submit Comment</button>
-    </form>
+<form action="https://api.staticman.net/v2/entry/Ashlyn213/my_story/main/comments" method="POST">
+    <input type="text" name="fields[name]" placeholder="Your Name" required>
+    <input type="email" name="fields[email]" placeholder="Your Email">
+    <textarea name="fields[message]" placeholder="Your Comment" required></textarea>
+    <button type="submit">Submit</button>
+</form>
+
 
     <br>
     <br>
