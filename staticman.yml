@@ -4,7 +4,7 @@ comments:
     - name
     - email
     - message
-  branch: "master" # 评论将提交到的分支
+  branch: "main" # 评论将提交到的分支
   commitMessage: "New comment from {{fields.name}}" # 提交时的自定义消息
   filename: "comments-{{@timestamp}}" # 评论文件的命名规则
   path: "_data/comments" # 评论保存的路径
