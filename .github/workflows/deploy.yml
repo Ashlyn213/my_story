@@ -24,8 +24,3 @@ jobs:
     - name: Build static site
       run: npm run build  # 构建静态网站，如果不同，请使用你的实际构建命令
 
-    - name: Upload build as artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: github-pages  # 上传构建产物，名称为 github-pages
-        path: ./build  # 确保指向构建产物目录，例如 ./build 或 ./public
