@@ -9,7 +9,7 @@ comments:
   filename: "comments-{{@timestamp}}" # 评论文件的命名规则
   path: "_data/comments" # 评论保存的路径
   format: "json" # 保存格式，可以是 yml, json 等
-  moderation: true # 是否启用审核功能
+  moderation: false # 是否启用审核功能
   requiredFields: # 强制要求的字段
     - name
     - message
