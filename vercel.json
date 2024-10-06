@@ -5,5 +5,11 @@
       "src": "api/staticman.js",
       "use": "@vercel/node"
     }
+  ],
+  "routes": [
+    {
+      "src": "/v3/entry/(.*)",
+      "dest": "/api/staticman.js"
+    }
   ]
 }
