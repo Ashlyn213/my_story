@@ -64,7 +64,12 @@
             font-weight: bold;
             margin-bottom: 5px;
         }
-      
+              .center-img {
+            display: block;
+            margin: 0 auto 20px; /* 上下边距为 0，左右自动居中，底部边距 20px */
+            max-width: 100%; /* 图片最大宽度为容器宽度 */
+            height: auto; /* 保持图片比例 */
+        }
     </style>
 </head>
 
@@ -72,13 +77,8 @@
              
             
     
-   
+    <img class="center-img" src="IMG/TUTU.jpg" alt="Placeholder Image">
     <div class="timeline">
-       <div class="entry">
-        
-          <img src="IMG/TUTU.jpg" alt="Cute" title="TuTu"width='150'>
-            
-        </div>
         <div class="entry">
             <div class="content">
                 <div class="date">9.13</div>
