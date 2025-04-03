@@ -46,13 +46,15 @@
         .entry::after {
             display: none;
         }
+        
         .content {
-            padding: 20px 30px;
-            background-color: white;
-            position: relative;
-            border-radius: 6px;
-            width: 70%;
-        }
+    padding: 0; /* 先设置为0 */
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    width: 70%;
+    margin: 0; /* 也添加这一行 */
+}
 
         .date {
             font-weight: bold;
