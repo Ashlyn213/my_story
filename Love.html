@@ -772,21 +772,7 @@
 
 
         
-    <script>
-        window.addEventListener('load', function () {
-    const timeline = document.querySelector('.timeline');
-    if (!timeline) {
-        console.error('.timeline element not found');
-        return;
-    }
-    const entries = document.querySelectorAll('.entry');
-    let totalHeight = 0;
-    entries.forEach(entry => {
-        totalHeight += entry.offsetHeight;
-    });
-    timeline.style.height = totalHeight + 'px';
-});
-    </script>
+
 
 
 
