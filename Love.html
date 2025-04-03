@@ -18,19 +18,16 @@
             margin: 0 auto;
         }
 
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 2px;
-            background-color: #ccc;
-            height: 100%; /* 这里设置为 100% 让它根据 .timeline 高度自动调整 */
-             position: absolute;
-            top: 0;
-            left: 50%;
-            margin-left: -1px;
-            z-index: -1;
-        }
-
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #ccc;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    z-index: -1;
+}
 
         .entry {
             padding: 10px 0;
@@ -784,18 +781,10 @@
     }
     const entries = document.querySelectorAll('.entry');
     let totalHeight = 0;
-    let minTop = Infinity;
-    let maxBottom = -Infinity;
-
     entries.forEach(entry => {
-        const rect = entry.getBoundingClientRect();
-        minTop = Math.min(minTop, rect.top);
-        maxBottom = Math.max(maxBottom, rect.bottom);
+        totalHeight += entry.offsetHeight;
     });
-
-    totalHeight = maxBottom - minTop;
     timeline.style.height = totalHeight + 'px';
-
 });
     </script>
 
