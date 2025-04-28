@@ -11,32 +11,31 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 60px;
+            height: 40px;
             background-color: rgba(0, 0, 0, 0.5);
             color: white;
             text-align: center;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             z-index: 1000;
         }
 
         #musicTitle {
-            margin-bottom: 5px;
+            margin-right: 10px;
         }
 
         button {
             padding: 5px 15px;
-            border: none;
+            border: 1px solid white;
             border-radius: 3px;
-            background-color: #1DB954;
+            background-color: transparent;
             color: white;
             cursor: pointer;
         }
 
         button:hover {
-            background-color: #169b46;
+            background-color: rgba(255, 255, 255, 0.2);
         }
         
         
@@ -107,7 +106,7 @@
             
     <div id="musicPlayer">
         <span id="musicTitle">🎵</span>
-        <button id="playPauseButton" onclick="togglePlayPause()">播放</button>
+        <button id="playPauseButton" onclick="togglePlayPause()">▶️</button>
         <audio id="audioPlayer" src="https://raw.githubusercontent.com/Ashlyn213/my_story/main/MP3/ye.mp3"></audio>
     </div>
 
@@ -118,10 +117,10 @@
         function togglePlayPause() {
             if (audioPlayer.paused) {
                 audioPlayer.play();
-                playPauseButton.textContent = "暂停";
+                playPauseButton.textContent = "⏸️";
             } else {
                 audioPlayer.pause();
-                playPauseButton.textContent = "播放";
+                playPauseButton.textContent = "▶️";
             }
         }
     </script>
