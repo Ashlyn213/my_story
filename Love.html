@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love Diary</title>
     <style>
-         /* 悬浮音乐播放器样式 */
+           /* 悬浮音乐播放器样式 */
         #musicPlayer {
             position: fixed;
             top: 0;
@@ -26,18 +26,16 @@
         }
 
         button {
-            padding: 5px 15px;
-            border: 1px solid white;
-            border-radius: 3px;
+            padding: 0;
+            border: none;
             background-color: transparent;
             color: white;
             cursor: pointer;
         }
 
         button:hover {
-            background-color: rgba(255, 255, 255, 0.2);
+            text-decoration: underline;
         }
-        
         
         body {
             font-family: Arial, sans-serif;
@@ -104,9 +102,9 @@
 <body>
              
             
-    <div id="musicPlayer">
-        <span id="musicTitle">🎵</span>
-        <button id="playPauseButton" onclick="togglePlayPause()">▶️</button>
+      <div id="musicPlayer">
+        <span id="musicTitle">XXXX</span>
+        <button id="playPauseButton" onclick="togglePlayPause()">Play</button>
         <audio id="audioPlayer" src="https://raw.githubusercontent.com/Ashlyn213/my_story/main/MP3/ye.mp3"></audio>
     </div>
 
@@ -117,10 +115,10 @@
         function togglePlayPause() {
             if (audioPlayer.paused) {
                 audioPlayer.play();
-                playPauseButton.textContent = "⏸️";
+                playPauseButton.textContent = "Pause";
             } else {
                 audioPlayer.pause();
-                playPauseButton.textContent = "▶️";
+                playPauseButton.textContent = "Play";
             }
         }
     </script>
