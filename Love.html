@@ -69,7 +69,15 @@
 <body>
              
             
-    <audio src="https://raw.githubusercontent.com/Ashlyn213/my_story/main/MP3/ye.mp3" autoplay loop></audio>
+   <audio id="myAudio" src="https://raw.githubusercontent.com/Ashlyn213/my_story/main/MP3/ye.mp3" loop></audio>
+    <button onclick="playAudio()">播放</button>
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('myAudio');
+            audio.play();
+        }
+    </script>
+
 
 
     <img class="center-img" src="IMG/TUTU.jpg" alt="Placeholder Image">
