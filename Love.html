@@ -64,17 +64,63 @@
             height: auto; /* 保持图片比例 */
         }
     </style>
+    <style>
+        /* 音乐播放器容器样式 */
+        #musicPlayer {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 200px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 音频元素样式 */
+        #audioPlayer {
+            width: 100%;
+        }
+
+        /* 按钮样式 */
+        button {
+            margin-top: 5px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: #1DB954;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #169b46;
+        }
+    </style>
 </head>
 
 <body>
              
             
-   <audio id="myAudio" src="https://raw.githubusercontent.com/Ashlyn213/my_story/main/MP3/ye.mp3" loop></audio>
-    <button onclick="playAudio()">播放</button>
+       <div id="musicPlayer">
+        <audio id="audioPlayer" src="https://raw.githubusercontent.com/Ashlyn213/my_story/main/MP3/ye.mp3"></audio>
+        <button id="playPauseButton" onclick="togglePlayPause()">Play</button>
+    </div>
     <script>
-        function playAudio() {
-            var audio = document.getElementById('myAudio');
-            audio.play();
+        // 获取音频元素和按钮元素
+        const audioPlayer = document.getElementById('audioPlayer');
+        const playPauseButton = document.getElementById('playPauseButton');
+
+        // 切换播放/暂停的函数
+        function togglePlayPause() {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                playPauseButton.textContent = "⏸️";
+            } else {
+                audioPlayer.pause();
+                playPauseButton.textContent = "▶️";
+            }
         }
     </script>
 
